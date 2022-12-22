@@ -1,0 +1,194 @@
+12/19/2022 06:09:36,ERROR,_get_raw_data | Expecting value: line 1 column 1 (char 0) | <class 'json.decoder.JSONDecodeError'> 
+ Traceback (most recent call last):
+  File "/root/Validator_queries_new/utils.py", line 93, in wrapper
+    return function(*args, **kwargs)
+  File "/root/Validator_queries_new/Cmd.py", line 40, in _get_raw_data
+    dict_data=json.loads(data_decode)
+  File "/usr/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+12/19/2022 06:11:08,ERROR,_get_raw_data | Expecting value: line 1 column 1 (char 0) | <class 'json.decoder.JSONDecodeError'> 
+ Traceback (most recent call last):
+  File "/root/Validator_queries_new/utils.py", line 93, in wrapper
+    return function(*args, **kwargs)
+  File "/root/Validator_queries_new/Cmd.py", line 41, in _get_raw_data
+    dict_data=json.loads(data_decode)
+  File "/usr/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+12/20/2022 10:31:40,ERROR,_get_raw_data | Expecting value: line 1 column 1 (char 0) | <class 'json.decoder.JSONDecodeError'> 
+ Traceback (most recent call last):
+  File "/root/Validator_queries_new/utils.py", line 93, in wrapper
+    return function(*args, **kwargs)
+  File "/root/Validator_queries_new/Cmd.py", line 41, in _get_raw_data
+    dict_data=json.loads(data_decode)
+  File "/usr/lib/python3.8/json/__init__.py", line 357, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.8/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.8/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+12/20/2022 10:43:07,ERROR,run | name 'subprocess' is not defined | <class 'NameError'> 
+ Traceback (most recent call last):
+  File "/root/Validator_queries_new/utils.py", line 108, in wrapper
+    return function(*args, **kwargs)
+  File "/root/Validator_queries_new/Cmd.py", line 52, in run
+    p1=subprocess.run(cmd,capture_output=True,text=True, timeout=45)
+NameError: name 'subprocess' is not defined
+
+12/20/2022 10:43:27,ERROR,run | name 'logging' is not defined | <class 'NameError'> 
+ Traceback (most recent call last):
+  File "/root/Validator_queries_new/utils.py", line 108, in wrapper
+    return function(*args, **kwargs)
+  File "/root/Validator_queries_new/Cmd.py", line 61, in run
+    logging.error("%s,%s,%s"%(cmd_type,args,stderr))
+NameError: name 'logging' is not defined
+
+12/20/2022 10:44:03,ERROR,run | name 'logging' is not defined | <class 'NameError'> 
+ Traceback (most recent call last):
+  File "/root/Validator_queries_new/utils.py", line 108, in wrapper
+    return function(*args, **kwargs)
+  File "/root/Validator_queries_new/Cmd.py", line 61, in run
+    logging.error("%s,%s,%s"%(cmd_type,args,stderr))
+NameError: name 'logging' is not defined
+
+12/20/2022 10:44:06,ERROR,run | name 'logging' is not defined | <class 'NameError'> 
+ Traceback (most recent call last):
+  File "/root/Validator_queries_new/utils.py", line 108, in wrapper
+    return function(*args, **kwargs)
+  File "/root/Validator_queries_new/Cmd.py", line 61, in run
+    logging.error("%s,%s,%s"%(cmd_type,args,stderr))
+NameError: name 'logging' is not defined
+
+12/20/2022 10:45:30,ERROR,run | name 'logging' is not defined | <class 'NameError'> 
+ Traceback (most recent call last):
+  File "/root/Validator_queries_new/utils.py", line 108, in wrapper
+    return function(*args, **kwargs)
+  File "/root/Validator_queries_new/Cmd.py", line 61, in run
+    logging.error("%s,%s,%s"%(cmd_type,args,stderr))
+NameError: name 'logging' is not defined
+
+12/20/2022 10:45:31,ERROR,run | name 'cmd_type' is not defined | <class 'NameError'> 
+ Traceback (most recent call last):
+  File "/root/Validator_queries_new/utils.py", line 108, in wrapper
+    return function(*args, **kwargs)
+  File "/root/Validator_queries_new/Cmd.py", line 62, in run
+    logging.error("%s,%s,%s"%(cmd_type,args,stderr))
+NameError: name 'cmd_type' is not defined
+
+12/20/2022 01:39:37,ERROR,run | name 'cmd_type' is not defined | <class 'NameError'> 
+ Traceback (most recent call last):
+  File "/root/Validator_queries_new/utils.py", line 108, in wrapper
+    return function(*args, **kwargs)
+  File "/root/Validator_queries_new/Cmd.py", line 70, in run
+    logging.error("%s,%s,%s"%(cmd_type,args,stderr))
+NameError: name 'cmd_type' is not defined
+
+12/20/2022 01:40:04,ERROR,keys-parse,fxcored keys parse fxvaloper1qcpxytptp0rfawxhgtm8z69y65g3g7d247d3wv --node=https://fx-json.functionx.io:26657,Error: unknown flag: --node
+12/20/2022 01:49:13,ERROR,keys-parse,fxcored keys parse fxvaloper1qcpxytptp0rfawxhgtm8z69y65g3g7d247d3wv --node=https://fx-json.functionx.io:26657,Error: unknown flag: --node
+12/20/2022 01:49:52,ERROR,keys-parse,fxcored keys parse fxvaloper1qcpxytptp0rfawxhgtm8z69y65g3g7d247d3wv --node=https://fx-json.functionx.io:26657,Error: unknown flag: --node
+12/20/2022 01:52:00,ERROR,keys-parse,fxcored keys parse fxvaloper1qcpxytptp0rfawxhgtm8z69y65g3g7d247d3wv --node=https://fx-json.functionx.io:26657,Error: unknown flag: --node
+12/20/2022 01:52:29,INFO,keys-parse,fxcored keys parse fxvaloper1qcpxytptp0rfawxhgtm8z69y65g3g7d247d3wv,{
+12/20/2022 01:54:29,INFO,keys-parse,fxcored keys parse fxvaloper1qcpxytptp0rfawxhgtm8z69y65g3g7d247d3wv,{
+12/20/2022 01:55:04,ERROR,run | name 'stdout' is not defined | <class 'NameError'> 
+ Traceback (most recent call last):
+  File "/root/Validator_queries_new/utils.py", line 108, in wrapper
+    return function(*args, **kwargs)
+  File "/root/Validator_queries_new/Cmd.py", line 67, in run
+    logging.info("%s,%s,%s"%(cmd_type,args,stdout))
+NameError: name 'stdout' is not defined
+
+12/20/2022 01:55:19,ERROR,run | name 'stdout' is not defined | <class 'NameError'> 
+ Traceback (most recent call last):
+  File "/root/Validator_queries_new/utils.py", line 108, in wrapper
+    return function(*args, **kwargs)
+  File "/root/Validator_queries_new/Cmd.py", line 67, in run
+    logging.info("%s,%s,%s"%(cmd_type,args,stdout))
+NameError: name 'stdout' is not defined
+
+12/20/2022 01:56:11,ERROR,run | name 'stdout' is not defined | <class 'NameError'> 
+ Traceback (most recent call last):
+  File "/root/Validator_queries_new/utils.py", line 108, in wrapper
+    return function(*args, **kwargs)
+  File "/root/Validator_queries_new/Cmd.py", line 68, in run
+    logging.info("%s,%s,%s"%(cmd_type,args,stdout))
+NameError: name 'stdout' is not defined
+
+12/20/2022 01:56:19,ERROR,run | name 'stdout' is not defined | <class 'NameError'> 
+ Traceback (most recent call last):
+  File "/root/Validator_queries_new/utils.py", line 108, in wrapper
+    return function(*args, **kwargs)
+  File "/root/Validator_queries_new/Cmd.py", line 68, in run
+    logging.info("%s,%s,%s"%(cmd_type,args,stdout))
+NameError: name 'stdout' is not defined
+
+12/20/2022 01:56:32,ERROR,run | name 'stdout' is not defined | <class 'NameError'> 
+ Traceback (most recent call last):
+  File "/root/Validator_queries_new/utils.py", line 108, in wrapper
+    return function(*args, **kwargs)
+  File "/root/Validator_queries_new/Cmd.py", line 68, in run
+    logging.info("%s,%s,%s"%(cmd_type,args,stdout))
+NameError: name 'stdout' is not defined
+
+12/20/2022 01:56:37,INFO,keys-parse,fxcored keys parse fxvaloper1qcpxytptp0rfawxhgtm8z69y65g3g7d247d3wv,{
+  "acc_address": "fx1qcpxytptp0rfawxhgtm8z69y65g3g7d2a0swsv",
+  "base64_address": "BgJiLCsLxp6410L2cWik1REUeao=",
+  "hex_address": "0602622c2b0bc69eb8d742f67168a4d5111479aa",
+  "val_address": "fxvaloper1qcpxytptp0rfawxhgtm8z69y65g3g7d247d3wv"
+}
+
+12/20/2022 01:56:40,INFO,keys-parse,fxcored keys parse fxvaloper1qcpxytptp0rfawxhgtm8z69y65g3g7d247d3wv,{
+  "acc_address": "fx1qcpxytptp0rfawxhgtm8z69y65g3g7d2a0swsv",
+  "base64_address": "BgJiLCsLxp6410L2cWik1REUeao=",
+  "hex_address": "0602622c2b0bc69eb8d742f67168a4d5111479aa",
+  "val_address": "fxvaloper1qcpxytptp0rfawxhgtm8z69y65g3g7d247d3wv"
+}
+
+12/20/2022 02:40:48,ERROR,run | name 'stdout' is not defined | <class 'NameError'> 
+ Traceback (most recent call last):
+  File "/root/Validator_queries_new/utils.py", line 108, in wrapper
+    return function(*args, **kwargs)
+  File "/root/Validator_queries_new/Cmd.py", line 78, in run
+    logging.info("%s,%s,%s"%(cmd_type,args,stdout))
+NameError: name 'stdout' is not defined
+
+12/20/2022 02:41:09,INFO,keys-parse,fxcored keys parse fxvaloper1qcpxytptp0rfawxhgtm8z69y65g3g7d247d3wv,{
+  "acc_address": "fx1qcpxytptp0rfawxhgtm8z69y65g3g7d2a0swsv",
+  "base64_address": "BgJiLCsLxp6410L2cWik1REUeao=",
+  "hex_address": "0602622c2b0bc69eb8d742f67168a4d5111479aa",
+  "val_address": "fxvaloper1qcpxytptp0rfawxhgtm8z69y65g3g7d247d3wv"
+}
+
+12/20/2022 02:41:12,INFO,keys-parse,fxcored keys parse fxvaloper1qcpxytptp0rfawxhgtm8z69y65g3g7d247d3wv,{
+  "acc_address": "fx1qcpxytptp0rfawxhgtm8z69y65g3g7d2a0swsv",
+  "base64_address": "BgJiLCsLxp6410L2cWik1REUeao=",
+  "hex_address": "0602622c2b0bc69eb8d742f67168a4d5111479aa",
+  "val_address": "fxvaloper1qcpxytptp0rfawxhgtm8z69y65g3g7d247d3wv"
+}
+
+12/20/2022 02:41:48,INFO,keys-parse,fxcored keys parse fxvaloper1qcpxytptp0rfawxhgtm8z69y65g3g7d247d3wv,{'acc_address': 'fx1qcpxytptp0rfawxhgtm8z69y65g3g7d2a0swsv', 'base64_address': 'BgJiLCsLxp6410L2cWik1REUeao=', 'hex_address': '0602622c2b0bc69eb8d742f67168a4d5111479aa', 'val_address': 'fxvaloper1qcpxytptp0rfawxhgtm8z69y65g3g7d247d3wv'}
+12/20/2022 02:42:03,INFO,keys-parse,fxcored keys parse fxvaloper1qcpxytptp0rfawxhgtm8z69y65g3g7d247d3wv,{
+  "acc_address": "fx1qcpxytptp0rfawxhgtm8z69y65g3g7d2a0swsv",
+  "base64_address": "BgJiLCsLxp6410L2cWik1REUeao=",
+  "hex_address": "0602622c2b0bc69eb8d742f67168a4d5111479aa",
+  "val_address": "fxvaloper1qcpxytptp0rfawxhgtm8z69y65g3g7d247d3wv"
+}
+
+12/20/2022 02:43:14,INFO,keys-parse,fxcored keys parse fxvaloper1qcpxytptp0rfawxhgtm8z69y65g3g7d247d3wv,{'acc_address': 'fx1qcpxytptp0rfawxhgtm8z69y65g3g7d2a0swsv', 'base64_address': 'BgJiLCsLxp6410L2cWik1REUeao=', 'hex_address': '0602622c2b0bc69eb8d742f67168a4d5111479aa', 'val_address': 'fxvaloper1qcpxytptp0rfawxhgtm8z69y65g3g7d247d3wv'}
+12/20/2022 02:43:14,INFO,q-distribution,fxcored q distribution commission fxvaloper1qcpxytptp0rfawxhgtm8z69y65g3g7d247d3wv --node=https://fx-json.functionx.io:26657,{'commission': [{'denom': 'FX', 'amount': '25586623490722286150704.326660180170927283'}]}
+12/20/2022 02:45:13,INFO,keys-parse,fxcored keys parse fxvaloper1qcpxytptp0rfawxhgtm8z69y65g3g7d247d3wv,{'acc_address': 'fx1qcpxytptp0rfawxhgtm8z69y65g3g7d2a0swsv', 'base64_address': 'BgJiLCsLxp6410L2cWik1REUeao=', 'hex_address': '0602622c2b0bc69eb8d742f67168a4d5111479aa', 'val_address': 'fxvaloper1qcpxytptp0rfawxhgtm8z69y65g3g7d247d3wv'}
+12/20/2022 02:45:13,INFO,q-distribution,fxcored q distribution commission fxvaloper1qcpxytptp0rfawxhgtm8z69y65g3g7d247d3wv --node=https://fx-json.functionx.io:26657,{'commission': [{'denom': 'FX', 'amount': '25586807027667594446004.391402054140747352'}]}
+12/20/2022 03:07:12,INFO,keys-parse,fxcored keys parse fxvaloper1qcpxytptp0rfawxhgtm8z69y65g3g7d247d3wv,{'acc_address': 'fx1qcpxytptp0rfawxhgtm8z69y65g3g7d2a0swsv', 'base64_address': 'BgJiLCsLxp6410L2cWik1REUeao=', 'hex_address': '0602622c2b0bc69eb8d742f67168a4d5111479aa', 'val_address': 'fxvaloper1qcpxytptp0rfawxhgtm8z69y65g3g7d247d3wv'}
+12/20/2022 03:07:13,INFO,q-distribution,fxcored q distribution commission fxvaloper1qcpxytptp0rfawxhgtm8z69y65g3g7d247d3wv --node=https://fx-json.functionx.io:26657,{'commission': [{'denom': 'FX', 'amount': '25589036927418755815961.168104280057335661'}]}
