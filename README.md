@@ -8,6 +8,7 @@ Setting up
 4. Activate virtual env `source env/bin/activate`
 5. Install dependencies `pip install -r requirements.txt`
 6. You must also have fxcore CLI installed. More information can be found at https://functionx.gitbook.io/home/fxcore/installation
+7. After installation of fxcore CLI you need to run `fxcored config output json`
 
 
 How to run
