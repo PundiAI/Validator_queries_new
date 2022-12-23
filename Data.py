@@ -47,6 +47,7 @@ def convert_validator_data_to_dict()->dict:
 def extract_validator_info()->list:
     """
     extract and return important validator info into a list
+    ie. (validator_address, moniker, jailed, tokens)
     """
     validator_dict = convert_validator_data_to_dict()
     validators = validator_dict["validators"]
@@ -110,6 +111,10 @@ def get_val_outstanding_delegated_rewards(validator_address:str)->float:
 
 
 def get_all_withdrawals(validator_address:str)->dict:
+  """
+  get the raw validator withdrawals info
+  """
+
   cmd = Cmd.get_all_withdrawals_cmd(validator_address)
   data = Cmd.run(cmd)
   return data
@@ -160,19 +165,25 @@ def convert_rewards_and_commission_to_dataframe(filtered_data:list)->pd.DataFram
   return df
 
 def sum_rewards_and_commission(df:pd.DataFrame)->tuple:
+  """
+  sum and return the commission and rewards
+  """
+
   withdrawn_commission = df['withdrawn_commission'].sum()
   withdrawn_rewards = df['withdrawn_rewards'].sum()
   return withdrawn_commission, withdrawn_rewards
     
 
-def get_validator_total_withdrawn_rewards_and_commission(validator_address:str):
+def get_validator_total_withdrawn_rewards_and_commission(validator_address:str)->tuple:
+  """
+  input validator address and returns a df of all withdrawals then sums the total withdrawn commission and rewards
+  """
   data = filter_val_withdrawals(validator_address)
   df = convert_rewards_and_commission_to_dataframe(data)
   return sum_rewards_and_commission(df)
 
 
 def build_validator_info():
-
   """
   [('fxvaloper1c0gnd02hwatfukgcux5f3hvhutcfj9kdvqrmuj', 'Cogni🧠', False, 4915426.917313896, 591.8402775296655, 4.2337591781656325, 4665.656907786245, 34.94493206874103)]
 

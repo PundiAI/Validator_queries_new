@@ -5,12 +5,7 @@ import json
 from utils import exception_logger
 import logging
 
-# validator_info = ["fxcored","q","staking","validators","--node=https://fx-json.functionx.io:26657"],
-# "create_val":["fxcored","q","txs","--events","message.action=create_validator","--node=https://fx-json.functionx.io:26657","--limit=100"],
-# "val_withdrawals":["fxcored","q","txs","--events","msg","--node=https://fx-json.functionx.io:26657"],
-# "val_outstanding_comms":["fxcored","q","distribution","commission","val","--node=https://fx-json.functionx.io:26657"],
-# "delegator_rewards":["fxcored","q","distribution","rewards","wallet","--node=https://fx-json.functionx.io:26657"]
-
+# =============================================================http queries=============================================================
 def get_val_outstanding_rewards(validator_address):
     r = requests.get(f'https://fx-rest.functionx.io/cosmos/distribution/v1beta1/validators/{validator_address}/outstanding_rewards')
     print(r.text)
@@ -24,7 +19,7 @@ def get_staking_validators():
     return r.text
 
 
-# ======================================================fxcore commands======================================================
+# =============================================================fxcore commands=============================================================
 
 def get_validator_address_cmd(validator_address:str)->list:
     validator_keys = ["fxcored","keys","parse","fxvaloper1lgzkn292ap2a4t8dvsq0cf5qfkkuplcnztcnvp"]
@@ -60,19 +55,6 @@ def get_all_withdrawals_cmd(validator_address):
     return cmd
 
 
-
-# @exception_logger
-# def _get_raw_data(cmd:list)->dict:
-#     """
-#     CLI command to return raw_data output
-#     """
-#     data=subprocess.run(cmd,stdout=subprocess.PIPE)
-#     # change byte to string
-#     data_decode=data.stdout.decode('utf-8')
-#     print(data_decode)
-#     dict_data=json.loads(data_decode)
-#     return dict_data
-
 # ---------------check type of cmd if based on the 1st and 2nd input--------------
 def determine_cmd_type(cmd:list)->str:
     """
@@ -103,8 +85,3 @@ def run(cmd):
             return stderr
     except TimeoutExpired:
         logging.error("Timeout happened.\n")
-
-# fxcored query distribution rewards fx1a73plz6w7fc8ydlwxddanc7a239kk45jmwcesj
-# fxcored query distribution commission fxvaloper1a73plz6w7fc8ydlwxddanc7a239kk45jnl9xwj
-# fxcored query txs --events 'message.sender=fxvaloper19psvqem8jafc5ydg4cnh0t2m04ngw9gfqkeceu&message.module=distribution'
-
