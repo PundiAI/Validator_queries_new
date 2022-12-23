@@ -77,7 +77,7 @@ def run(cmd):
         if (p1.returncode==0):
             # stdout=p1.stdout.split('\n', 1)[0]
             stdout = json.loads(p1.stdout)
-            logging.info("%s,%s,%s"%(cmd_type,args,stdout))
+            logging.info("%s,%s"%(cmd_type,args))
             return stdout
         else:
             stderr=p1.stderr.split('\n', 1)[0]

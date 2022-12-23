@@ -1,194 +1,238 @@
-12/19/2022 06:09:36,ERROR,_get_raw_data | Expecting value: line 1 column 1 (char 0) | <class 'json.decoder.JSONDecodeError'> 
- Traceback (most recent call last):
-  File "/root/Validator_queries_new/utils.py", line 93, in wrapper
-    return function(*args, **kwargs)
-  File "/root/Validator_queries_new/Cmd.py", line 40, in _get_raw_data
-    dict_data=json.loads(data_decode)
-  File "/usr/lib/python3.8/json/__init__.py", line 357, in loads
-    return _default_decoder.decode(s)
-  File "/usr/lib/python3.8/json/decoder.py", line 337, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-  File "/usr/lib/python3.8/json/decoder.py", line 355, in raw_decode
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-
-12/19/2022 06:11:08,ERROR,_get_raw_data | Expecting value: line 1 column 1 (char 0) | <class 'json.decoder.JSONDecodeError'> 
- Traceback (most recent call last):
-  File "/root/Validator_queries_new/utils.py", line 93, in wrapper
-    return function(*args, **kwargs)
-  File "/root/Validator_queries_new/Cmd.py", line 41, in _get_raw_data
-    dict_data=json.loads(data_decode)
-  File "/usr/lib/python3.8/json/__init__.py", line 357, in loads
-    return _default_decoder.decode(s)
-  File "/usr/lib/python3.8/json/decoder.py", line 337, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-  File "/usr/lib/python3.8/json/decoder.py", line 355, in raw_decode
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-
-12/20/2022 10:31:40,ERROR,_get_raw_data | Expecting value: line 1 column 1 (char 0) | <class 'json.decoder.JSONDecodeError'> 
- Traceback (most recent call last):
-  File "/root/Validator_queries_new/utils.py", line 93, in wrapper
-    return function(*args, **kwargs)
-  File "/root/Validator_queries_new/Cmd.py", line 41, in _get_raw_data
-    dict_data=json.loads(data_decode)
-  File "/usr/lib/python3.8/json/__init__.py", line 357, in loads
-    return _default_decoder.decode(s)
-  File "/usr/lib/python3.8/json/decoder.py", line 337, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-  File "/usr/lib/python3.8/json/decoder.py", line 355, in raw_decode
-    raise JSONDecodeError("Expecting value", s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-
-12/20/2022 10:43:07,ERROR,run | name 'subprocess' is not defined | <class 'NameError'> 
- Traceback (most recent call last):
-  File "/root/Validator_queries_new/utils.py", line 108, in wrapper
-    return function(*args, **kwargs)
-  File "/root/Validator_queries_new/Cmd.py", line 52, in run
-    p1=subprocess.run(cmd,capture_output=True,text=True, timeout=45)
-NameError: name 'subprocess' is not defined
-
-12/20/2022 10:43:27,ERROR,run | name 'logging' is not defined | <class 'NameError'> 
- Traceback (most recent call last):
-  File "/root/Validator_queries_new/utils.py", line 108, in wrapper
-    return function(*args, **kwargs)
-  File "/root/Validator_queries_new/Cmd.py", line 61, in run
-    logging.error("%s,%s,%s"%(cmd_type,args,stderr))
-NameError: name 'logging' is not defined
-
-12/20/2022 10:44:03,ERROR,run | name 'logging' is not defined | <class 'NameError'> 
- Traceback (most recent call last):
-  File "/root/Validator_queries_new/utils.py", line 108, in wrapper
-    return function(*args, **kwargs)
-  File "/root/Validator_queries_new/Cmd.py", line 61, in run
-    logging.error("%s,%s,%s"%(cmd_type,args,stderr))
-NameError: name 'logging' is not defined
-
-12/20/2022 10:44:06,ERROR,run | name 'logging' is not defined | <class 'NameError'> 
- Traceback (most recent call last):
-  File "/root/Validator_queries_new/utils.py", line 108, in wrapper
-    return function(*args, **kwargs)
-  File "/root/Validator_queries_new/Cmd.py", line 61, in run
-    logging.error("%s,%s,%s"%(cmd_type,args,stderr))
-NameError: name 'logging' is not defined
-
-12/20/2022 10:45:30,ERROR,run | name 'logging' is not defined | <class 'NameError'> 
- Traceback (most recent call last):
-  File "/root/Validator_queries_new/utils.py", line 108, in wrapper
-    return function(*args, **kwargs)
-  File "/root/Validator_queries_new/Cmd.py", line 61, in run
-    logging.error("%s,%s,%s"%(cmd_type,args,stderr))
-NameError: name 'logging' is not defined
-
-12/20/2022 10:45:31,ERROR,run | name 'cmd_type' is not defined | <class 'NameError'> 
- Traceback (most recent call last):
-  File "/root/Validator_queries_new/utils.py", line 108, in wrapper
-    return function(*args, **kwargs)
-  File "/root/Validator_queries_new/Cmd.py", line 62, in run
-    logging.error("%s,%s,%s"%(cmd_type,args,stderr))
-NameError: name 'cmd_type' is not defined
-
-12/20/2022 01:39:37,ERROR,run | name 'cmd_type' is not defined | <class 'NameError'> 
- Traceback (most recent call last):
-  File "/root/Validator_queries_new/utils.py", line 108, in wrapper
-    return function(*args, **kwargs)
-  File "/root/Validator_queries_new/Cmd.py", line 70, in run
-    logging.error("%s,%s,%s"%(cmd_type,args,stderr))
-NameError: name 'cmd_type' is not defined
-
-12/20/2022 01:40:04,ERROR,keys-parse,fxcored keys parse fxvaloper1qcpxytptp0rfawxhgtm8z69y65g3g7d247d3wv --node=https://fx-json.functionx.io:26657,Error: unknown flag: --node
-12/20/2022 01:49:13,ERROR,keys-parse,fxcored keys parse fxvaloper1qcpxytptp0rfawxhgtm8z69y65g3g7d247d3wv --node=https://fx-json.functionx.io:26657,Error: unknown flag: --node
-12/20/2022 01:49:52,ERROR,keys-parse,fxcored keys parse fxvaloper1qcpxytptp0rfawxhgtm8z69y65g3g7d247d3wv --node=https://fx-json.functionx.io:26657,Error: unknown flag: --node
-12/20/2022 01:52:00,ERROR,keys-parse,fxcored keys parse fxvaloper1qcpxytptp0rfawxhgtm8z69y65g3g7d247d3wv --node=https://fx-json.functionx.io:26657,Error: unknown flag: --node
-12/20/2022 01:52:29,INFO,keys-parse,fxcored keys parse fxvaloper1qcpxytptp0rfawxhgtm8z69y65g3g7d247d3wv,{
-12/20/2022 01:54:29,INFO,keys-parse,fxcored keys parse fxvaloper1qcpxytptp0rfawxhgtm8z69y65g3g7d247d3wv,{
-12/20/2022 01:55:04,ERROR,run | name 'stdout' is not defined | <class 'NameError'> 
- Traceback (most recent call last):
-  File "/root/Validator_queries_new/utils.py", line 108, in wrapper
-    return function(*args, **kwargs)
-  File "/root/Validator_queries_new/Cmd.py", line 67, in run
-    logging.info("%s,%s,%s"%(cmd_type,args,stdout))
-NameError: name 'stdout' is not defined
-
-12/20/2022 01:55:19,ERROR,run | name 'stdout' is not defined | <class 'NameError'> 
- Traceback (most recent call last):
-  File "/root/Validator_queries_new/utils.py", line 108, in wrapper
-    return function(*args, **kwargs)
-  File "/root/Validator_queries_new/Cmd.py", line 67, in run
-    logging.info("%s,%s,%s"%(cmd_type,args,stdout))
-NameError: name 'stdout' is not defined
-
-12/20/2022 01:56:11,ERROR,run | name 'stdout' is not defined | <class 'NameError'> 
- Traceback (most recent call last):
-  File "/root/Validator_queries_new/utils.py", line 108, in wrapper
-    return function(*args, **kwargs)
-  File "/root/Validator_queries_new/Cmd.py", line 68, in run
-    logging.info("%s,%s,%s"%(cmd_type,args,stdout))
-NameError: name 'stdout' is not defined
-
-12/20/2022 01:56:19,ERROR,run | name 'stdout' is not defined | <class 'NameError'> 
- Traceback (most recent call last):
-  File "/root/Validator_queries_new/utils.py", line 108, in wrapper
-    return function(*args, **kwargs)
-  File "/root/Validator_queries_new/Cmd.py", line 68, in run
-    logging.info("%s,%s,%s"%(cmd_type,args,stdout))
-NameError: name 'stdout' is not defined
-
-12/20/2022 01:56:32,ERROR,run | name 'stdout' is not defined | <class 'NameError'> 
- Traceback (most recent call last):
-  File "/root/Validator_queries_new/utils.py", line 108, in wrapper
-    return function(*args, **kwargs)
-  File "/root/Validator_queries_new/Cmd.py", line 68, in run
-    logging.info("%s,%s,%s"%(cmd_type,args,stdout))
-NameError: name 'stdout' is not defined
-
-12/20/2022 01:56:37,INFO,keys-parse,fxcored keys parse fxvaloper1qcpxytptp0rfawxhgtm8z69y65g3g7d247d3wv,{
-  "acc_address": "fx1qcpxytptp0rfawxhgtm8z69y65g3g7d2a0swsv",
-  "base64_address": "BgJiLCsLxp6410L2cWik1REUeao=",
-  "hex_address": "0602622c2b0bc69eb8d742f67168a4d5111479aa",
-  "val_address": "fxvaloper1qcpxytptp0rfawxhgtm8z69y65g3g7d247d3wv"
-}
-
-12/20/2022 01:56:40,INFO,keys-parse,fxcored keys parse fxvaloper1qcpxytptp0rfawxhgtm8z69y65g3g7d247d3wv,{
-  "acc_address": "fx1qcpxytptp0rfawxhgtm8z69y65g3g7d2a0swsv",
-  "base64_address": "BgJiLCsLxp6410L2cWik1REUeao=",
-  "hex_address": "0602622c2b0bc69eb8d742f67168a4d5111479aa",
-  "val_address": "fxvaloper1qcpxytptp0rfawxhgtm8z69y65g3g7d247d3wv"
-}
-
-12/20/2022 02:40:48,ERROR,run | name 'stdout' is not defined | <class 'NameError'> 
- Traceback (most recent call last):
-  File "/root/Validator_queries_new/utils.py", line 108, in wrapper
-    return function(*args, **kwargs)
-  File "/root/Validator_queries_new/Cmd.py", line 78, in run
-    logging.info("%s,%s,%s"%(cmd_type,args,stdout))
-NameError: name 'stdout' is not defined
-
-12/20/2022 02:41:09,INFO,keys-parse,fxcored keys parse fxvaloper1qcpxytptp0rfawxhgtm8z69y65g3g7d247d3wv,{
-  "acc_address": "fx1qcpxytptp0rfawxhgtm8z69y65g3g7d2a0swsv",
-  "base64_address": "BgJiLCsLxp6410L2cWik1REUeao=",
-  "hex_address": "0602622c2b0bc69eb8d742f67168a4d5111479aa",
-  "val_address": "fxvaloper1qcpxytptp0rfawxhgtm8z69y65g3g7d247d3wv"
-}
-
-12/20/2022 02:41:12,INFO,keys-parse,fxcored keys parse fxvaloper1qcpxytptp0rfawxhgtm8z69y65g3g7d247d3wv,{
-  "acc_address": "fx1qcpxytptp0rfawxhgtm8z69y65g3g7d2a0swsv",
-  "base64_address": "BgJiLCsLxp6410L2cWik1REUeao=",
-  "hex_address": "0602622c2b0bc69eb8d742f67168a4d5111479aa",
-  "val_address": "fxvaloper1qcpxytptp0rfawxhgtm8z69y65g3g7d247d3wv"
-}
-
-12/20/2022 02:41:48,INFO,keys-parse,fxcored keys parse fxvaloper1qcpxytptp0rfawxhgtm8z69y65g3g7d247d3wv,{'acc_address': 'fx1qcpxytptp0rfawxhgtm8z69y65g3g7d2a0swsv', 'base64_address': 'BgJiLCsLxp6410L2cWik1REUeao=', 'hex_address': '0602622c2b0bc69eb8d742f67168a4d5111479aa', 'val_address': 'fxvaloper1qcpxytptp0rfawxhgtm8z69y65g3g7d247d3wv'}
-12/20/2022 02:42:03,INFO,keys-parse,fxcored keys parse fxvaloper1qcpxytptp0rfawxhgtm8z69y65g3g7d247d3wv,{
-  "acc_address": "fx1qcpxytptp0rfawxhgtm8z69y65g3g7d2a0swsv",
-  "base64_address": "BgJiLCsLxp6410L2cWik1REUeao=",
-  "hex_address": "0602622c2b0bc69eb8d742f67168a4d5111479aa",
-  "val_address": "fxvaloper1qcpxytptp0rfawxhgtm8z69y65g3g7d247d3wv"
-}
-
-12/20/2022 02:43:14,INFO,keys-parse,fxcored keys parse fxvaloper1qcpxytptp0rfawxhgtm8z69y65g3g7d247d3wv,{'acc_address': 'fx1qcpxytptp0rfawxhgtm8z69y65g3g7d2a0swsv', 'base64_address': 'BgJiLCsLxp6410L2cWik1REUeao=', 'hex_address': '0602622c2b0bc69eb8d742f67168a4d5111479aa', 'val_address': 'fxvaloper1qcpxytptp0rfawxhgtm8z69y65g3g7d247d3wv'}
-12/20/2022 02:43:14,INFO,q-distribution,fxcored q distribution commission fxvaloper1qcpxytptp0rfawxhgtm8z69y65g3g7d247d3wv --node=https://fx-json.functionx.io:26657,{'commission': [{'denom': 'FX', 'amount': '25586623490722286150704.326660180170927283'}]}
-12/20/2022 02:45:13,INFO,keys-parse,fxcored keys parse fxvaloper1qcpxytptp0rfawxhgtm8z69y65g3g7d247d3wv,{'acc_address': 'fx1qcpxytptp0rfawxhgtm8z69y65g3g7d2a0swsv', 'base64_address': 'BgJiLCsLxp6410L2cWik1REUeao=', 'hex_address': '0602622c2b0bc69eb8d742f67168a4d5111479aa', 'val_address': 'fxvaloper1qcpxytptp0rfawxhgtm8z69y65g3g7d247d3wv'}
-12/20/2022 02:45:13,INFO,q-distribution,fxcored q distribution commission fxvaloper1qcpxytptp0rfawxhgtm8z69y65g3g7d247d3wv --node=https://fx-json.functionx.io:26657,{'commission': [{'denom': 'FX', 'amount': '25586807027667594446004.391402054140747352'}]}
-12/20/2022 03:07:12,INFO,keys-parse,fxcored keys parse fxvaloper1qcpxytptp0rfawxhgtm8z69y65g3g7d247d3wv,{'acc_address': 'fx1qcpxytptp0rfawxhgtm8z69y65g3g7d2a0swsv', 'base64_address': 'BgJiLCsLxp6410L2cWik1REUeao=', 'hex_address': '0602622c2b0bc69eb8d742f67168a4d5111479aa', 'val_address': 'fxvaloper1qcpxytptp0rfawxhgtm8z69y65g3g7d247d3wv'}
-12/20/2022 03:07:13,INFO,q-distribution,fxcored q distribution commission fxvaloper1qcpxytptp0rfawxhgtm8z69y65g3g7d247d3wv --node=https://fx-json.functionx.io:26657,{'commission': [{'denom': 'FX', 'amount': '25589036927418755815961.168104280057335661'}]}
+12/23/2022 12:00:06,INFO,q-distribution,fxcored q distribution rewards fx1qcpxytptp0rfawxhgtm8z69y65g3g7d2a0swsv --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:07,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper1qcpxytptp0rfawxhgtm8z69y65g3g7d247d3wv&message.module=distribution --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:07,INFO,q-distribution,fxcored q distribution commission fxvaloper1p2le22wf9mr3h7j9qgseqtvf89ek2z0tmsdhrj --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:07,INFO,keys-parse,fxcored keys parse fxvaloper1p2le22wf9mr3h7j9qgseqtvf89ek2z0tmsdhrj
+12/23/2022 12:00:07,INFO,q-distribution,fxcored q distribution rewards fx1p2le22wf9mr3h7j9qgseqtvf89ek2z0tnpsgaj --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:07,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper1p2le22wf9mr3h7j9qgseqtvf89ek2z0tmsdhrj&message.module=distribution --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:07,INFO,q-distribution,fxcored q distribution commission fxvaloper1pvv04yexryyxsraalwcephkavtwsadzh5yatru --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:07,INFO,keys-parse,fxcored keys parse fxvaloper1pvv04yexryyxsraalwcephkavtwsadzh5yatru
+12/23/2022 12:00:07,INFO,q-distribution,fxcored q distribution rewards fx1pvv04yexryyxsraalwcephkavtwsadzhu4q5au --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:08,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper1pvv04yexryyxsraalwcephkavtwsadzh5yatru&message.module=distribution --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:08,INFO,q-distribution,fxcored q distribution commission fxvaloper1pcr9h9evn05rpussq9wahmerqjh380mepmshnp --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:08,INFO,keys-parse,fxcored keys parse fxvaloper1pcr9h9evn05rpussq9wahmerqjh380mepmshnp
+12/23/2022 12:00:08,INFO,q-distribution,fxcored q distribution rewards fx1pcr9h9evn05rpussq9wahmerqjh380mef2dgdp --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:08,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper1pcr9h9evn05rpussq9wahmerqjh380mepmshnp&message.module=distribution --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:08,INFO,q-distribution,fxcored q distribution commission fxvaloper1pa4mt67gk67l3ksgwatm56vfjze7y922j2p2q5 --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:08,INFO,keys-parse,fxcored keys parse fxvaloper1pa4mt67gk67l3ksgwatm56vfjze7y922j2p2q5
+12/23/2022 12:00:08,INFO,q-distribution,fxcored q distribution rewards fx1pa4mt67gk67l3ksgwatm56vfjze7y9226mu475 --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:09,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper1pa4mt67gk67l3ksgwatm56vfjze7y922j2p2q5&message.module=distribution --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:09,INFO,q-distribution,fxcored q distribution commission fxvaloper1zn0p7rqp2s702r4aua98gdtlwp6gza904h2dls --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:09,INFO,keys-parse,fxcored keys parse fxvaloper1zn0p7rqp2s702r4aua98gdtlwp6gza904h2dls
+12/23/2022 12:00:09,INFO,q-distribution,fxcored q distribution rewards fx1zn0p7rqp2s702r4aua98gdtlwp6gza90axhjps --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:10,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper1zn0p7rqp2s702r4aua98gdtlwp6gza904h2dls&message.module=distribution --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:10,INFO,q-distribution,fxcored q distribution commission fxvaloper1znc46yl5g39yxt5nc8rls7lqz6f9tpu5m9rux9 --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:10,INFO,keys-parse,fxcored keys parse fxvaloper1znc46yl5g39yxt5nc8rls7lqz6f9tpu5m9rux9
+12/23/2022 12:00:10,INFO,q-distribution,fxcored q distribution rewards fx1znc46yl5g39yxt5nc8rls7lqz6f9tpu5n57rc9 --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:10,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper1znc46yl5g39yxt5nc8rls7lqz6f9tpu5m9rux9&message.module=distribution --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:10,INFO,q-distribution,fxcored q distribution commission fxvaloper1z67rkadwrp2nf4zwxpktpqnw969plelyjj5alt --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:10,INFO,keys-parse,fxcored keys parse fxvaloper1z67rkadwrp2nf4zwxpktpqnw969plelyjj5alt
+12/23/2022 12:00:10,INFO,q-distribution,fxcored q distribution rewards fx1z67rkadwrp2nf4zwxpktpqnw969plely6rfzpt --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:12,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper1z67rkadwrp2nf4zwxpktpqnw969plelyjj5alt&message.module=distribution --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:12,INFO,q-distribution,fxcored q distribution commission fxvaloper1r4f58l7x5eyn82e36tetc69fd9xf65x5e3k34g --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:12,INFO,keys-parse,fxcored keys parse fxvaloper1r4f58l7x5eyn82e36tetc69fd9xf65x5e3k34g
+12/23/2022 12:00:12,INFO,q-distribution,fxcored q distribution rewards fx1r4f58l7x5eyn82e36tetc69fd9xf65x53qtwtg --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:12,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper1r4f58l7x5eyn82e36tetc69fd9xf65x5e3k34g&message.module=distribution --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:12,INFO,q-distribution,fxcored q distribution commission fxvaloper1yqz7fm3els5we5cq4h6ug3yywm7sfpl0jm2pxh --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:12,INFO,keys-parse,fxcored keys parse fxvaloper1yqz7fm3els5we5cq4h6ug3yywm7sfpl0jm2pxh
+12/23/2022 12:00:13,INFO,q-distribution,fxcored q distribution rewards fx1yqz7fm3els5we5cq4h6ug3yywm7sfpl062h7ch --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:13,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper1yqz7fm3els5we5cq4h6ug3yywm7sfpl0jm2pxh&message.module=distribution --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:13,INFO,q-distribution,fxcored q distribution commission fxvaloper1ycy79ct7anmz5gmck7jann2c3lhwm8ztm5x3ch --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:13,INFO,keys-parse,fxcored keys parse fxvaloper1ycy79ct7anmz5gmck7jann2c3lhwm8ztm5x3ch
+12/23/2022 12:00:13,INFO,q-distribution,fxcored q distribution rewards fx1ycy79ct7anmz5gmck7jann2c3lhwm8ztn9mwxh --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:13,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper1ycy79ct7anmz5gmck7jann2c3lhwm8ztm5x3ch&message.module=distribution --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:13,INFO,q-distribution,fxcored q distribution commission fxvaloper1yc0v6at49lc9n8rvvcw86rgf2cgc26jy4ckzkj --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:14,INFO,keys-parse,fxcored keys parse fxvaloper1yc0v6at49lc9n8rvvcw86rgf2cgc26jy4ckzkj
+12/23/2022 12:00:14,INFO,q-distribution,fxcored q distribution rewards fx1yc0v6at49lc9n8rvvcw86rgf2cgc26jyaftagj --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:14,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper1yc0v6at49lc9n8rvvcw86rgf2cgc26jy4ckzkj&message.module=distribution --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:14,INFO,q-distribution,fxcored q distribution commission fxvaloper19psvqem8jafc5ydg4cnh0t2m04ngw9gfqkeceu --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:14,INFO,keys-parse,fxcored keys parse fxvaloper19psvqem8jafc5ydg4cnh0t2m04ngw9gfqkeceu
+12/23/2022 12:00:14,INFO,q-distribution,fxcored q distribution rewards fx19psvqem8jafc5ydg4cnh0t2m04ngw9gfg8y88u --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:14,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper19psvqem8jafc5ydg4cnh0t2m04ngw9gfqkeceu&message.module=distribution --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:15,INFO,q-distribution,fxcored q distribution commission fxvaloper19g2087ksund76mv3vt598pd6p563f856wqldkg --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:15,INFO,keys-parse,fxcored keys parse fxvaloper19g2087ksund76mv3vt598pd6p563f856wqldkg
+12/23/2022 12:00:15,INFO,q-distribution,fxcored q distribution rewards fx19g2087ksund76mv3vt598pd6p563f856x3zjgg --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:16,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper19g2087ksund76mv3vt598pd6p563f856wqldkg&message.module=distribution --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:16,INFO,q-distribution,fxcored q distribution commission fxvaloper19fyfq60lyhv8nlanukfmrg5lp66s8q20vx3jj5 --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:16,INFO,keys-parse,fxcored keys parse fxvaloper19fyfq60lyhv8nlanukfmrg5lp66s8q20vx3jj5
+12/23/2022 12:00:16,INFO,q-distribution,fxcored q distribution rewards fx19fyfq60lyhv8nlanukfmrg5lp66s8q20yhvdv5 --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:16,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper19fyfq60lyhv8nlanukfmrg5lp66s8q20vx3jj5&message.module=distribution --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:17,INFO,q-distribution,fxcored q distribution commission fxvaloper194wzf8rxucjt3hmesv6ccf5z5s8ss4h2rdrmr0 --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:17,INFO,keys-parse,fxcored keys parse fxvaloper194wzf8rxucjt3hmesv6ccf5z5s8ss4h2rdrmr0
+12/23/2022 12:00:17,INFO,q-distribution,fxcored q distribution rewards fx194wzf8rxucjt3hmesv6ccf5z5s8ss4h2tu7ya0 --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:17,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper194wzf8rxucjt3hmesv6ccf5z5s8ss4h2rdrmr0&message.module=distribution --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:17,INFO,q-distribution,fxcored q distribution commission fxvaloper1xrzyg8w0ccm07z80cm5zxkcclfylcujneaxtuy --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:17,INFO,keys-parse,fxcored keys parse fxvaloper1xrzyg8w0ccm07z80cm5zxkcclfylcujneaxtuy
+12/23/2022 12:00:17,INFO,q-distribution,fxcored q distribution rewards fx1xrzyg8w0ccm07z80cm5zxkcclfylcujn3vm5zy --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:18,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper1xrzyg8w0ccm07z80cm5zxkcclfylcujneaxtuy&message.module=distribution --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:18,INFO,q-distribution,fxcored q distribution commission fxvaloper18p4q7fzj76x2s4p3upzkzxvqsyecfz2yx2y4x9 --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:18,INFO,keys-parse,fxcored keys parse fxvaloper18p4q7fzj76x2s4p3upzkzxvqsyecfz2yx2y4x9
+12/23/2022 12:00:18,INFO,q-distribution,fxcored q distribution rewards fx18p4q7fzj76x2s4p3upzkzxvqsyecfz2ywme2c9 --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:18,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper18p4q7fzj76x2s4p3upzkzxvqsyecfz2yx2y4x9&message.module=distribution --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:18,INFO,q-distribution,fxcored q distribution commission fxvaloper18xj9zy4wx96r73kqfqtm95jtpxdrw7uuxht457 --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:18,INFO,keys-parse,fxcored keys parse fxvaloper18xj9zy4wx96r73kqfqtm95jtpxdrw7uuxht457
+12/23/2022 12:00:19,INFO,q-distribution,fxcored q distribution rewards fx18xj9zy4wx96r73kqfqtm95jtpxdrw7uuwxk227 --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:19,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper18xj9zy4wx96r73kqfqtm95jtpxdrw7uuxht457&message.module=distribution --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:19,INFO,q-distribution,fxcored q distribution commission fxvaloper1886ndwvun7gs2cqqe6k5vg9uddmvqgsz2vvsn8 --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:19,INFO,keys-parse,fxcored keys parse fxvaloper1886ndwvun7gs2cqqe6k5vg9uddmvqgsz2vvsn8
+12/23/2022 12:00:19,INFO,q-distribution,fxcored q distribution rewards fx1886ndwvun7gs2cqqe6k5vg9uddmvqgszza30d8 --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:19,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper1886ndwvun7gs2cqqe6k5vg9uddmvqgsz2vvsn8&message.module=distribution --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:19,INFO,q-distribution,fxcored q distribution commission fxvaloper1fxhwgkxphr6adkp84ka9cddqk8l8axr4j4egdl --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:20,INFO,keys-parse,fxcored keys parse fxvaloper1fxhwgkxphr6adkp84ka9cddqk8l8axr4j4egdl
+12/23/2022 12:00:20,INFO,q-distribution,fxcored q distribution rewards fx1fxhwgkxphr6adkp84ka9cddqk8l8axr46yyhnl --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:20,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper1fxhwgkxphr6adkp84ka9cddqk8l8axr4j4egdl&message.module=distribution --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:20,INFO,q-distribution,fxcored q distribution commission fxvaloper1fxlpxnlrgquwaes5wrt5awdaymv5wpntfgsct8 --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:20,INFO,keys-parse,fxcored keys parse fxvaloper1fxlpxnlrgquwaes5wrt5awdaymv5wpntfgsct8
+12/23/2022 12:00:20,INFO,q-distribution,fxcored q distribution rewards fx1fxlpxnlrgquwaes5wrt5awdaymv5wpntped848 --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:20,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper1fxlpxnlrgquwaes5wrt5awdaymv5wpntfgsct8&message.module=distribution --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:21,INFO,q-distribution,fxcored q distribution commission fxvaloper1fvrkqzf795p4hh36hwy8rq57ywv5kwyxjax8cf --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:21,INFO,keys-parse,fxcored keys parse fxvaloper1fvrkqzf795p4hh36hwy8rq57ywv5kwyxjax8cf
+12/23/2022 12:00:21,INFO,q-distribution,fxcored q distribution rewards fx1fvrkqzf795p4hh36hwy8rq57ywv5kwyx6vmcxf --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:21,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper1fvrkqzf795p4hh36hwy8rq57ywv5kwyxjax8cf&message.module=distribution --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:21,INFO,q-distribution,fxcored q distribution commission fxvaloper1290uryg96klfsdn3usktwcy5t3qxh8eclsmtqy --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:21,INFO,keys-parse,fxcored keys parse fxvaloper1290uryg96klfsdn3usktwcy5t3qxh8eclsmtqy
+12/23/2022 12:00:21,INFO,q-distribution,fxcored q distribution rewards fx1290uryg96klfsdn3usktwcy5t3qxh8echpx57y --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:21,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper1290uryg96klfsdn3usktwcy5t3qxh8eclsmtqy&message.module=distribution --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:22,INFO,q-distribution,fxcored q distribution commission fxvaloper12dzp2wydkc8rtjeejehsck8kwmrxz7tk3t8h6s --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:22,INFO,keys-parse,fxcored keys parse fxvaloper12dzp2wydkc8rtjeejehsck8kwmrxz7tk3t8h6s
+12/23/2022 12:00:22,INFO,q-distribution,fxcored q distribution rewards fx12dzp2wydkc8rtjeejehsck8kwmrxz7tke66gys --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:23,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper12dzp2wydkc8rtjeejehsck8kwmrxz7tk3t8h6s&message.module=distribution --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:23,INFO,q-distribution,fxcored q distribution commission fxvaloper126pplyfsrshzvjutslee8369uhc3hvmxml8adf --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:23,INFO,keys-parse,fxcored keys parse fxvaloper126pplyfsrshzvjutslee8369uhc3hvmxml8adf
+12/23/2022 12:00:23,INFO,q-distribution,fxcored q distribution rewards fx126pplyfsrshzvjutslee8369uhc3hvmxnw6znf --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:24,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper126pplyfsrshzvjutslee8369uhc3hvmxml8adf&message.module=distribution --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:24,INFO,q-distribution,fxcored q distribution commission fxvaloper1265yve20ltnn8gl9cdphgxwyem423mwy2g6060 --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:24,INFO,keys-parse,fxcored keys parse fxvaloper1265yve20ltnn8gl9cdphgxwyem423mwy2g6060
+12/23/2022 12:00:24,INFO,q-distribution,fxcored q distribution rewards fx1265yve20ltnn8gl9cdphgxwyem423mwyze8sy0 --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:24,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper1265yve20ltnn8gl9cdphgxwyem423mwy2g6060&message.module=distribution --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:24,INFO,q-distribution,fxcored q distribution commission fxvaloper1t28sjqjfg0zs9wuzpyu3m59c2g4jh6q6nck2w6 --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:24,INFO,keys-parse,fxcored keys parse fxvaloper1t28sjqjfg0zs9wuzpyu3m59c2g4jh6q6nck2w6
+12/23/2022 12:00:25,INFO,q-distribution,fxcored q distribution rewards fx1t28sjqjfg0zs9wuzpyu3m59c2g4jh6q6mft4s6 --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:25,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper1t28sjqjfg0zs9wuzpyu3m59c2g4jh6q6nck2w6&message.module=distribution --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:25,INFO,q-distribution,fxcored q distribution commission fxvaloper1t569mgfscvmzrrrwqkzc2g3g2lxffpvh2s3pv8 --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:25,INFO,keys-parse,fxcored keys parse fxvaloper1t569mgfscvmzrrrwqkzc2g3g2lxffpvh2s3pv8
+12/23/2022 12:00:25,INFO,q-distribution,fxcored q distribution rewards fx1t569mgfscvmzrrrwqkzc2g3g2lxffpvhzpv7j8 --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:26,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper1t569mgfscvmzrrrwqkzc2g3g2lxffpvh2s3pv8&message.module=distribution --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:26,INFO,q-distribution,fxcored q distribution commission fxvaloper1drrh5nhcn40x827j8rgx9kg9f5nftut63hnz2s --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:27,INFO,keys-parse,fxcored keys parse fxvaloper1drrh5nhcn40x827j8rgx9kg9f5nftut63hnz2s
+12/23/2022 12:00:27,INFO,q-distribution,fxcored q distribution rewards fx1drrh5nhcn40x827j8rgx9kg9f5nftut6exwa5s --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:27,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper1drrh5nhcn40x827j8rgx9kg9f5nftut63hnz2s&message.module=distribution --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:27,INFO,q-distribution,fxcored q distribution commission fxvaloper1dlm4kp90axktn7ywg68ueaa4uyjddnnxjxkwk8 --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:27,INFO,keys-parse,fxcored keys parse fxvaloper1dlm4kp90axktn7ywg68ueaa4uyjddnnxjxkwk8
+12/23/2022 12:00:28,INFO,q-distribution,fxcored q distribution rewards fx1dlm4kp90axktn7ywg68ueaa4uyjddnnx6ht3g8 --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:28,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper1dlm4kp90axktn7ywg68ueaa4uyjddnnxjxkwk8&message.module=distribution --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:28,INFO,q-distribution,fxcored q distribution commission fxvaloper10vazcv8mfhy7lm5fuep82esxwcx70dwttsx2ez --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:28,INFO,keys-parse,fxcored keys parse fxvaloper10vazcv8mfhy7lm5fuep82esxwcx70dwttsx2ez
+12/23/2022 12:00:28,INFO,q-distribution,fxcored q distribution rewards fx10vazcv8mfhy7lm5fuep82esxwcx70dwtrpm48z --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:28,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper10vazcv8mfhy7lm5fuep82esxwcx70dwttsx2ez&message.module=distribution --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:28,INFO,q-distribution,fxcored q distribution commission fxvaloper1srkazumnkle6uzmdvqq68df9gglylp3pkhuwna --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:28,INFO,keys-parse,fxcored keys parse fxvaloper1srkazumnkle6uzmdvqq68df9gglylp3pkhuwna
+12/23/2022 12:00:29,INFO,q-distribution,fxcored q distribution rewards fx1srkazumnkle6uzmdvqq68df9gglylp3p7xp3da --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:29,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper1srkazumnkle6uzmdvqq68df9gglylp3pkhuwna&message.module=distribution --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:29,INFO,q-distribution,fxcored q distribution commission fxvaloper1337eaaxxqd7l3jw6hwsrh0rvcjgfzgwqdtfq8x --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:29,INFO,keys-parse,fxcored keys parse fxvaloper1337eaaxxqd7l3jw6hwsrh0rvcjgfzgwqdtfq8x
+12/23/2022 12:00:29,INFO,q-distribution,fxcored q distribution rewards fx1337eaaxxqd7l3jw6hwsrh0rvcjgfzgwq965lex --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:30,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper1337eaaxxqd7l3jw6hwsrh0rvcjgfzgwqdtfq8x&message.module=distribution --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:30,INFO,q-distribution,fxcored q distribution commission fxvaloper1359ld4urxm0807wcmyth9dkmsw2pwznjeh26pt --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:30,INFO,keys-parse,fxcored keys parse fxvaloper1359ld4urxm0807wcmyth9dkmsw2pwznjeh26pt
+12/23/2022 12:00:30,INFO,q-distribution,fxcored q distribution rewards fx1359ld4urxm0807wcmyth9dkmsw2pwznj3xh9lt --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:30,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper1359ld4urxm0807wcmyth9dkmsw2pwznjeh26pt&message.module=distribution --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:30,INFO,q-distribution,fxcored q distribution commission fxvaloper1jcwagrc7gxpsr3xhvtvwek4kyx3m7q858jxqec --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:30,INFO,keys-parse,fxcored keys parse fxvaloper1jcwagrc7gxpsr3xhvtvwek4kyx3m7q858jxqec
+12/23/2022 12:00:30,INFO,q-distribution,fxcored q distribution rewards fx1jcwagrc7gxpsr3xhvtvwek4kyx3m7q850rml8c --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:31,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper1jcwagrc7gxpsr3xhvtvwek4kyx3m7q858jxqec&message.module=distribution --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:31,INFO,q-distribution,fxcored q distribution commission fxvaloper1nammyssvfumll85kx6fwwje3qy3pkpvkw35p89 --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:31,INFO,keys-parse,fxcored keys parse fxvaloper1nammyssvfumll85kx6fwwje3qy3pkpvkw35p89
+12/23/2022 12:00:31,INFO,q-distribution,fxcored q distribution rewards fx1nammyssvfumll85kx6fwwje3qy3pkpvkxqf7e9 --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:32,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper1nammyssvfumll85kx6fwwje3qy3pkpvkw35p89&message.module=distribution --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:32,INFO,q-distribution,fxcored q distribution commission fxvaloper15x2nwxq75fth468wn5xpvvtwhtnj2af0pz6tuj --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:32,INFO,keys-parse,fxcored keys parse fxvaloper15x2nwxq75fth468wn5xpvvtwhtnj2af0pz6tuj
+12/23/2022 12:00:32,INFO,q-distribution,fxcored q distribution rewards fx15x2nwxq75fth468wn5xpvvtwhtnj2af0fn85zj --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:32,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper15x2nwxq75fth468wn5xpvvtwhtnj2af0pz6tuj&message.module=distribution --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:32,INFO,q-distribution,fxcored q distribution commission fxvaloper14y39e3ujz2m0y2we8tqjwppmj5j4vh80hyafz7 --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:32,INFO,keys-parse,fxcored keys parse fxvaloper14y39e3ujz2m0y2we8tqjwppmj5j4vh80hyafz7
+12/23/2022 12:00:32,INFO,q-distribution,fxcored q distribution rewards fx14y39e3ujz2m0y2we8tqjwppmj5j4vh80l4qku7 --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:33,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper14y39e3ujz2m0y2we8tqjwppmj5j4vh80hyafz7&message.module=distribution --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:33,INFO,q-distribution,fxcored q distribution commission fxvaloper1ke3gmlz77w700w65qyhtc3y3ahtwupjk3szeph --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:33,INFO,keys-parse,fxcored keys parse fxvaloper1ke3gmlz77w700w65qyhtc3y3ahtwupjk3szeph
+12/23/2022 12:00:33,INFO,q-distribution,fxcored q distribution rewards fx1ke3gmlz77w700w65qyhtc3y3ahtwupjkeplxlh --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:33,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper1ke3gmlz77w700w65qyhtc3y3ahtwupjk3szeph&message.module=distribution --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:33,INFO,q-distribution,fxcored q distribution commission fxvaloper1h88fa2my5ns6ydpvzdjhtmjw4smz2zzd4eg7sv --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:33,INFO,keys-parse,fxcored keys parse fxvaloper1h88fa2my5ns6ydpvzdjhtmjw4smz2zzd4eg7sv
+12/23/2022 12:00:34,INFO,q-distribution,fxcored q distribution rewards fx1h88fa2my5ns6ydpvzdjhtmjw4smz2zzdag4pwv --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:34,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper1h88fa2my5ns6ydpvzdjhtmjw4smz2zzd4eg7sv&message.module=distribution --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:34,INFO,q-distribution,fxcored q distribution commission fxvaloper1hnavkdy0ep629tlwt32x82qsssx9yyvp0s0wtt --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:34,INFO,keys-parse,fxcored keys parse fxvaloper1hnavkdy0ep629tlwt32x82qsssx9yyvp0s0wtt
+12/23/2022 12:00:34,INFO,q-distribution,fxcored q distribution rewards fx1hnavkdy0ep629tlwt32x82qsssx9yyvp8pj34t --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:34,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper1hnavkdy0ep629tlwt32x82qsssx9yyvp0s0wtt&message.module=distribution --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:34,INFO,q-distribution,fxcored q distribution commission fxvaloper1hl5s5tycshsklqyv88ednwmr3hc90wmqxh23c2 --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:34,INFO,keys-parse,fxcored keys parse fxvaloper1hl5s5tycshsklqyv88ednwmr3hc90wmqxh23c2
+12/23/2022 12:00:35,INFO,q-distribution,fxcored q distribution rewards fx1hl5s5tycshsklqyv88ednwmr3hc90wmqwxhwx2 --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:35,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper1hl5s5tycshsklqyv88ednwmr3hc90wmqxh23c2&message.module=distribution --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:35,INFO,q-distribution,fxcored q distribution commission fxvaloper1c0gnd02hwatfukgcux5f3hvhutcfj9kdvqrmuj --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:35,INFO,keys-parse,fxcored keys parse fxvaloper1c0gnd02hwatfukgcux5f3hvhutcfj9kdvqrmuj
+12/23/2022 12:00:35,INFO,q-distribution,fxcored q distribution rewards fx1c0gnd02hwatfukgcux5f3hvhutcfj9kdy37yzj --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:36,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper1c0gnd02hwatfukgcux5f3hvhutcfj9kdvqrmuj&message.module=distribution --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:36,INFO,q-distribution,fxcored q distribution commission fxvaloper1c4glwxgvs5vjx9j2w4ef7r4480cfs2dkv7h8u2 --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:36,INFO,keys-parse,fxcored keys parse fxvaloper1c4glwxgvs5vjx9j2w4ef7r4480cfs2dkv7h8u2
+12/23/2022 12:00:36,INFO,q-distribution,fxcored q distribution rewards fx1c4glwxgvs5vjx9j2w4ef7r4480cfs2dky02cz2 --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:36,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper1c4glwxgvs5vjx9j2w4ef7r4480cfs2dkv7h8u2&message.module=distribution --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:36,INFO,q-distribution,fxcored q distribution commission fxvaloper1evpmc2je2mmvad3pukyre0xw37y0cdr5pqptke --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:36,INFO,keys-parse,fxcored keys parse fxvaloper1evpmc2je2mmvad3pukyre0xw37y0cdr5pqptke
+12/23/2022 12:00:36,INFO,q-distribution,fxcored q distribution rewards fx1evpmc2je2mmvad3pukyre0xw37y0cdr5f3u5ge --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:37,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper1evpmc2je2mmvad3pukyre0xw37y0cdr5pqptke&message.module=distribution --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:37,INFO,q-distribution,fxcored q distribution commission fxvaloper1engnd3l9gg67gggr7n4wq7c32zavd9sq4faxua --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:37,INFO,keys-parse,fxcored keys parse fxvaloper1engnd3l9gg67gggr7n4wq7c32zavd9sq4faxua
+12/23/2022 12:00:37,INFO,q-distribution,fxcored q distribution rewards fx1engnd3l9gg67gggr7n4wq7c32zavd9sqacqeza --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:37,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper1engnd3l9gg67gggr7n4wq7c32zavd9sq4faxua&message.module=distribution --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:37,INFO,q-distribution,fxcored q distribution commission fxvaloper16evwmqjz8gd2wwl3qu83a3f3mlkp4yelqew850 --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:37,INFO,keys-parse,fxcored keys parse fxvaloper16evwmqjz8gd2wwl3qu83a3f3mlkp4yelqew850
+12/23/2022 12:00:38,INFO,q-distribution,fxcored q distribution rewards fx16evwmqjz8gd2wwl3qu83a3f3mlkp4yelggnc20 --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:38,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper16evwmqjz8gd2wwl3qu83a3f3mlkp4yelqew850&message.module=distribution --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:38,INFO,q-distribution,fxcored q distribution commission fxvaloper1ms606vz2zrxw7752y5ae8z4zyp52ajjacv9qyd --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:38,INFO,keys-parse,fxcored keys parse fxvaloper1ms606vz2zrxw7752y5ae8z4zyp52ajjacv9qyd
+12/23/2022 12:00:38,INFO,q-distribution,fxcored q distribution rewards fx1ms606vz2zrxw7752y5ae8z4zyp52ajjasacl6d --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:38,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper1ms606vz2zrxw7752y5ae8z4zyp52ajjacv9qyd&message.module=distribution --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:38,INFO,q-distribution,fxcored q distribution commission fxvaloper1mc84eaz33l77ue6s53c482lu6fvq5uexmyea8h --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:39,INFO,keys-parse,fxcored keys parse fxvaloper1mc84eaz33l77ue6s53c482lu6fvq5uexmyea8h
+12/23/2022 12:00:39,INFO,q-distribution,fxcored q distribution rewards fx1mc84eaz33l77ue6s53c482lu6fvq5uexn4yzeh --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:39,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper1mc84eaz33l77ue6s53c482lu6fvq5uexmyea8h&message.module=distribution --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:39,INFO,q-distribution,fxcored q distribution commission fxvaloper1maactzfltlrr304dsnm8fffjtupcs4ehjedchy --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:39,INFO,keys-parse,fxcored keys parse fxvaloper1maactzfltlrr304dsnm8fffjtupcs4ehjedchy
+12/23/2022 12:00:40,INFO,q-distribution,fxcored q distribution rewards fx1maactzfltlrr304dsnm8fffjtupcs4eh6gs8fy --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:40,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper1maactzfltlrr304dsnm8fffjtupcs4ehjedchy&message.module=distribution --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:40,INFO,q-distribution,fxcored q distribution commission fxvaloper1u2736s9hm43ds6xxje0d2qhhy2m56akaf8up7t --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:40,INFO,keys-parse,fxcored keys parse fxvaloper1u2736s9hm43ds6xxje0d2qhhy2m56akaf8up7t
+12/23/2022 12:00:40,INFO,q-distribution,fxcored q distribution rewards fx1u2736s9hm43ds6xxje0d2qhhy2m56akapkp7qt --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:40,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper1u2736s9hm43ds6xxje0d2qhhy2m56akaf8up7t&message.module=distribution --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:40,INFO,q-distribution,fxcored q distribution commission fxvaloper1umj9xqdv7q2quvtks8j66mwrj9wcfqp4486qgn --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:41,INFO,keys-parse,fxcored keys parse fxvaloper1umj9xqdv7q2quvtks8j66mwrj9wcfqp4486qgn
+12/23/2022 12:00:41,INFO,q-distribution,fxcored q distribution rewards fx1umj9xqdv7q2quvtks8j66mwrj9wcfqp4ak8lkn --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:42,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper1umj9xqdv7q2quvtks8j66mwrj9wcfqp4486qgn&message.module=distribution --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:42,INFO,q-distribution,fxcored q distribution commission fxvaloper1as2rwvnayy30pzjy7aw35dcsja6g98nd87r8vp --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:42,INFO,keys-parse,fxcored keys parse fxvaloper1as2rwvnayy30pzjy7aw35dcsja6g98nd87r8vp
+12/23/2022 12:00:42,INFO,q-distribution,fxcored q distribution rewards fx1as2rwvnayy30pzjy7aw35dcsja6g98nd007cjp --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:42,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper1as2rwvnayy30pzjy7aw35dcsja6g98nd87r8vp&message.module=distribution --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:42,INFO,q-distribution,fxcored q distribution commission fxvaloper1astdkdrxlgylehy0jpqv2e357kl6pq0ccq4u73 --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:42,INFO,keys-parse,fxcored keys parse fxvaloper1astdkdrxlgylehy0jpqv2e357kl6pq0ccq4u73
+12/23/2022 12:00:42,INFO,q-distribution,fxcored q distribution rewards fx1astdkdrxlgylehy0jpqv2e357kl6pq0cs3grq3 --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:43,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper1astdkdrxlgylehy0jpqv2e357kl6pq0ccq4u73&message.module=distribution --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:43,INFO,q-distribution,fxcored q distribution commission fxvaloper1a73plz6w7fc8ydlwxddanc7a239kk45jnl9xwj --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:43,INFO,keys-parse,fxcored keys parse fxvaloper1a73plz6w7fc8ydlwxddanc7a239kk45jnl9xwj
+12/23/2022 12:00:43,INFO,q-distribution,fxcored q distribution rewards fx1a73plz6w7fc8ydlwxddanc7a239kk45jmwcesj --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:44,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper1a73plz6w7fc8ydlwxddanc7a239kk45jnl9xwj&message.module=distribution --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:44,INFO,q-distribution,fxcored q distribution commission fxvaloper1780uflqpght7etzq8auv0ram6rwy3wd69vdxc9 --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:44,INFO,keys-parse,fxcored keys parse fxvaloper1780uflqpght7etzq8auv0ram6rwy3wd69vdxc9
+12/23/2022 12:00:44,INFO,q-distribution,fxcored q distribution rewards fx1780uflqpght7etzq8auv0ram6rwy3wd6dasex9 --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:45,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper1780uflqpght7etzq8auv0ram6rwy3wd69vdxc9&message.module=distribution --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:45,INFO,q-distribution,fxcored q distribution commission fxvaloper175yk2n6dq66kl3m8rsqn5yfqf4jkegnlvcce0a --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:45,INFO,keys-parse,fxcored keys parse fxvaloper175yk2n6dq66kl3m8rsqn5yfqf4jkegnlvcce0a
+12/23/2022 12:00:45,INFO,q-distribution,fxcored q distribution rewards fx175yk2n6dq66kl3m8rsqn5yfqf4jkegnlyf9x3a --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:46,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper175yk2n6dq66kl3m8rsqn5yfqf4jkegnlvcce0a&message.module=distribution --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:46,INFO,q-distribution,fxcored q distribution commission fxvaloper17k6kc0mqnnccqqgkm3d2nzp0jqxpjutxhqyay6 --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:46,INFO,keys-parse,fxcored keys parse fxvaloper17k6kc0mqnnccqqgkm3d2nzp0jqxpjutxhqyay6
+12/23/2022 12:00:46,INFO,q-distribution,fxcored q distribution rewards fx17k6kc0mqnnccqqgkm3d2nzp0jqxpjutxl3ez66 --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:46,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper17k6kc0mqnnccqqgkm3d2nzp0jqxpjutxhqyay6&message.module=distribution --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:46,INFO,q-distribution,fxcored q distribution commission fxvaloper1lgzkn292ap2a4t8dvsq0cf5qfkkuplcnztcnvp --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:46,INFO,keys-parse,fxcored keys parse fxvaloper1lgzkn292ap2a4t8dvsq0cf5qfkkuplcnztcnvp
+12/23/2022 12:00:46,INFO,q-distribution,fxcored q distribution rewards fx1lgzkn292ap2a4t8dvsq0cf5qfkkuplcn269vjp --node=https://fx-json.functionx.io:26657
+12/23/2022 12:00:47,INFO,query-txs,fxcored query txs --events message.sender=fxvaloper1lgzkn292ap2a4t8dvsq0cf5qfkkuplcnztcnvp&message.module=distribution --node=https://fx-json.functionx.io:26657

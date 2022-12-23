@@ -102,6 +102,7 @@ def exception_logger(function):
     A decorator that wraps the passed in function and logs 
     exceptions should one occur
     """
+    initialise_logging("logs.csv")
     @wraps(function) # this is to allow stacking of decorators
     def wrapper(*args, **kwargs):
         try:
