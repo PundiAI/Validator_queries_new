@@ -22,7 +22,7 @@ def get_staking_validators():
 # =============================================================fxcore commands=============================================================
 
 def get_validator_address_cmd(validator_address:str)->list:
-    validator_keys = ["fxcored","keys","parse","fxvaloper1lgzkn292ap2a4t8dvsq0cf5qfkkuplcnztcnvp"]
+    validator_keys = ["fxcored","keys","decode","fxvaloper1lgzkn292ap2a4t8dvsq0cf5qfkkuplcnztcnvp"]
     validator_keys[3] = validator_address
     return validator_keys
 
