@@ -18,11 +18,14 @@ def get_staking_validators():
     r = requests.get('https://fx-rest.functionx.io/cosmos/staking/v1beta1/validators')
     return r.text
 
+def getDelegatorDelegation(delegatorAddress):
+    r = requests.get(f"https://fx-rest.functionx.io/cosmos/staking/v1beta1/delegations/{delegatorAddress}")
+    return r.text
 
 # =============================================================fxcore commands=============================================================
 
 def get_validator_address_cmd(validator_address:str)->list:
-    validator_keys = ["fxcored","keys","decode","fxvaloper1lgzkn292ap2a4t8dvsq0cf5qfkkuplcnztcnvp"]
+    validator_keys = ["/root/go/bin/fxcored","keys","decode","fxvaloper1lgzkn292ap2a4t8dvsq0cf5qfkkuplcnztcnvp"]
     validator_keys[3] = validator_address
     return validator_keys
 
@@ -32,13 +35,13 @@ def get_val_outstanding_comms_cmd(validator_address:str):
     """
     get outstanding comms for validator
     """
-    val_outstanding_comms = ["fxcored","q","distribution","commission","val","--node=https://fx-json.functionx.io:26657"]
+    val_outstanding_comms = ["/root/go/bin/fxcored","q","distribution","commission","val","--node=https://fx-json.functionx.io:26657"]
     val_outstanding_comms[4]=validator_address
     return val_outstanding_comms
 
 
 def get_val_outstanding_delegated_rewards_cmd(validator_wallet_address:str):
-    delegator_rewards = ["fxcored","q","distribution","rewards","wallet","--node=https://fx-json.functionx.io:26657"]
+    delegator_rewards = ["/root/go/bin/fxcored","q","distribution","rewards","wallet","--node=https://fx-json.functionx.io:26657"]
     delegator_rewards[4] = validator_wallet_address
     return delegator_rewards
 
@@ -51,7 +54,7 @@ def _create_msg_string(validator_address:str)->str:
 
 def get_all_withdrawals_cmd(validator_address):
     msg = _create_msg_string(validator_address)
-    cmd = ["fxcored", "query", "txs", "--events", msg, "--node=https://fx-json.functionx.io:26657"]
+    cmd = ["/root/go/bin/fxcored", "query", "txs", "--events", msg, "--node=https://fx-json.functionx.io:26657"]
     return cmd
 
 

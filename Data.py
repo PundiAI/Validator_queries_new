@@ -44,6 +44,35 @@ def convert_validator_data_to_dict()->dict:
     data = json.loads(staking_validators)
     return data
 
+
+def convertDelegationsDataToDict(delegatorAddr: str) -> dict:
+  """
+  convert delegator delegations string o/p from rpc query to dictionary :
+  {
+    "delegation_responses": [
+      {
+        "delegation": {
+          "delegator_address": "fx1srkazumnkle6uzmdvqq68df9gglylp3p7xp3da",
+          "validator_address": "fxvaloper1srkazumnkle6uzmdvqq68df9gglylp3pkhuwna",
+          "shares": "109999999999999975507.000000000000000000"
+        },
+        "balance": {
+          "denom": "FX",
+          "amount": "109999999999999975507"
+        }
+      }
+    ],
+    "pagination": {
+      "next_key": null,
+      "total": "1"
+    }
+  }
+  """
+  resText = Cmd.getDelegatorDelegation(delegatorAddr)
+  data = json.loads(resText)
+  return data
+
+
 def extract_validator_info()->list:
     """
     extract and return important validator info into a list
@@ -57,9 +86,29 @@ def extract_validator_info()->list:
         moniker = validator["description"]["moniker"]
         jailed = validator["jailed"]
         tokens = utils.convert_to_human_readable(float(validator["tokens"]))
-        val = (validator_address, moniker, jailed, tokens)
+        validator_acc_addr = get_validator_address(validator_address)
+        
+        selfBondedAmount = getValidatorSelfBonded(
+          validator_address,
+          validator_acc_addr
+        )
+        peerDelegatedAmount = tokens - selfBondedAmount
+        val = (validator_address, moniker, jailed, tokens, selfBondedAmount, peerDelegatedAmount)
         validator_info_list.append(val)
     return validator_info_list
+
+
+def getValidatorSelfBonded(val_address: str, acc_address: str):
+  delegations = convertDelegationsDataToDict(acc_address)
+  delegationResponses = delegations["delegation_responses"]
+  selfBondedAmount = float(0)
+  for d in delegationResponses:  
+    if (d["delegation"]["validator_address"] == val_address):
+      balRaw = d["balance"]["amount"]
+      selfBondedAmount += utils.convert_to_human_readable(
+        float(balRaw)
+      )
+  return selfBondedAmount
 
 
 def get_validator_address(validator_address:str)->str:
@@ -70,10 +119,8 @@ def get_validator_address(validator_address:str)->str:
   "hex_address": "0602622c2b0bc69eb8d742f67168a4d5111479aa",
   "val_address": "fxvaloper1qcpxytptp0rfawxhgtm8z69y65g3g7d247d3wv"
   }
-
   returns the acc_address
   """
-
   cmd = Cmd.get_validator_address_cmd(validator_address)
   data = Cmd.run(cmd)
   return data["acc_address"]
@@ -192,7 +239,7 @@ def build_validator_info():
   data = extract_validator_info()
   validator_info = []
   for d in data:
-    validator_address, moniker, jailed, tokens = d[0], d[1], d[2], d[3]
+    validator_address, moniker, jailed, tokens, selfBondedAmount, peerDelegatedAmount = d[0], d[1], d[2], d[3], d[4], d[5]
     # print(validator_address,moniker)
     outstanding_comms = get_val_outstanding_comms(validator_address)
     outstanding_rewards = get_val_outstanding_delegated_rewards(validator_address)
@@ -200,6 +247,6 @@ def build_validator_info():
     total_commission = outstanding_comms + withdrawn_commission
     total_rewards = outstanding_rewards + withdrawn_rewards
     total_earnings = total_commission + total_rewards
-    val = (validator_address, moniker, jailed, tokens, outstanding_comms, outstanding_rewards, withdrawn_commission, withdrawn_rewards, total_commission, total_rewards, total_earnings)
+    val = (validator_address, moniker, jailed, tokens, selfBondedAmount, peerDelegatedAmount, outstanding_comms, outstanding_rewards, withdrawn_commission, withdrawn_rewards, total_commission, total_rewards, total_earnings)
     validator_info.append(val)
   return validator_info
