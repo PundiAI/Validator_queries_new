@@ -215,7 +215,8 @@ def sum_rewards_and_commission(df:pd.DataFrame)->tuple:
   """
   sum and return the commission and rewards
   """
-
+  if "withdrawn_rewards" not in df.columns:
+    df["withdrawn_rewards"] = 0
   withdrawn_commission = df['withdrawn_commission'].sum()
   withdrawn_rewards = df['withdrawn_rewards'].sum()
   return withdrawn_commission, withdrawn_rewards
